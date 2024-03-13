@@ -29,8 +29,8 @@
                 просмотра</span> <!--подумать над названием для скринридера-->
             </a>
             <span class="likes-number">12</span>
-            <a class="navigation-user-link" href="catalog.html" arria-current="page">Хочу сюда</a>
           </li>
+          <a class="navigation-catalog-button" href="catalog.html">Хочу сюда</a>
         </ul>
       </nav>
     </header>
@@ -40,11 +40,12 @@
         <ul class=" breadcrumb-list">
           <li class=" breadcrumb-item">
             <a class="breadcrumb-link" href="index.html">
-              <span class="visually-hidden">Главная</span> <!--span нужен или нет-->
+              <img class="breadcrumb-icon" src="#" alt="Иконка для перехода на главную страницу">
+              <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class=" breadcrumb-item">
-            <a class="breadcrumb-link">Гостиницы</a>
+            <span class="breadcrumb-link">Гостиницы</span>
           </li>
         </ul>
       </header>
@@ -103,13 +104,13 @@
               <label class="price-value" for="min-price">
                 <span class="visually-hidden">От</span>
               </label>
-              <input type="text" id="min-price" name="min-price" value="0">
+              <input type="number" id="min-price" name="min-price" value="0">
             </p>
             <p class="price-form-date">
               <label class="price-value" for="max-price">
                 <span class="visually-hidden">До</span>
               </label>
-              <input type="text" id="max-price" name="max-price" value="9000">
+              <input type="number" id="max-price" name="max-price" value="9000">
             </p>
           </fieldset>
           <button class="filter-button active-filter-button" type="submit">Применить</button>
@@ -135,7 +136,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
-              <img class="hotel-card-image" src="#" alt="звездное небо">
+              <img class="hotel-card-image" src="#" alt="вид на звездное небо из пещеры">
             </a>
             <a class="catalog-card-link" href="#" tabindex="-1">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -212,7 +213,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a> <!--что должно происходить тут?-->
+            <a class="pagination-link" href="#">...</a> <!--что должно происходить тут? еще один класс нужен?-->
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
