@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Sedona</title>
   </head>
-
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img src="#" alt="Логотип сайта города Седона"> <!--класс нужен для картинки?-->
+          <img class="logo-img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта города Седона"> <!--класс нужен для картинки?-->
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -25,8 +23,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <a class="navigation-user-link" href="#">
-              <span class="visually-hidden">Количество гостиниц, добавленных в "Избранное" и доступных для
-                просмотра</span> <!--подумать над названием для скринридера-->
+              <span class="visually-hidden">Количество гостиниц, добавленных в "Избранное" и доступных для просмотра</span> <!--подумать описание-->
             </a>
             <span class="likes-number">12</span>
           </li>
@@ -40,7 +37,6 @@
         <ul class=" breadcrumb-list">
           <li class=" breadcrumb-item">
             <a class="breadcrumb-link" href="index.html">
-              <img class="breadcrumb-icon" src="#" alt="Иконка для перехода на главную страницу">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -136,7 +132,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
-              <img class="hotel-card-image" src="#" alt="вид на звездное небо из пещеры">
+              <img class="hotel-card-image" src="images/starry-sky.jpg" width="300" height="212" alt="вид на звездное небо из горного ущелья">
             </a>
             <a class="catalog-card-link" href="#" tabindex="-1">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -152,7 +148,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
-              <img class="hotel-card-image" src="#" alt="радуга">
+              <img class="hotel-card-image" src="images/rainbow.jpg" width="300" height="212" alt="радуга">
             </a>
             <a class="catalog-card-link" href="#" tabindex="-1">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -168,7 +164,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
-              <img class="hotel-card-image" src="#" alt="подножье горы">
+              <img class="hotel-card-image" src="images/morning-mountain.jpg" width="300" height="212" alt="рассвет у подножь горы">
             </a>
             <a class="catalog-card-link" href="#" tabindex="-1">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -184,7 +180,7 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
-              <img class="hotel-card-image" src="#" alt="гора в красном рассвете">
+              <img class="hotel-card-image" src="images/red-mountain.jpg" width="300" height="212" alt="гора в красном рассвете">
             </a>
             <a class="catalog-card-link" href="#" tabindex="-1">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -229,7 +225,7 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email"></label>
           <input type="email" id="subscription-email" name="user-email" placeholder="e-mail">
-          <button type="submit">Подписаться</button>
+          <button type="submit">Подписаться</button> <!--все таки кнопка на всплывающее модальное окно или ссылка на страницу?-->
         </form>
       </section>
       <section class="socials">
@@ -252,14 +248,13 @@
           </li>
         </ul>
       </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Контактный телефон</h2> <!--почему не выводим через блок adress?-->
+      <address class="contacts">
+        <h2 class="visually-hidden">Контактный телефон</h2>
         <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-      </section>
+      </address>
       <a class="developer-logo" href="https://htmlacademy.ru/">
-        <img src="#" alt="Логотип разработчика сайта - HTML Аcademy">
+        <span class="visually-hidden">Логотип разработчика сайта - HTML Аcademy</span>
       </a>
     </footer>
   </body>
-
 </html>
