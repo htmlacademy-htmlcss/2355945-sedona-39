@@ -14,7 +14,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -22,6 +31,33 @@ body {
   font-style: normal;
   color: #000000;
   background-color: #F2F2F2;  /*позже - не забывать про тень, контент имеет фиксируемую ширину 1200px и центрируется по странице*/
+}
+.main-container {  /*не понимаю, как работает*/
+  flex-grow: 1;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200 px;
+  background-color: #FFFFFF;
+}
+
+.navigation {  /*width 1200 или как? другие размеры?*/
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.navigation-block {
+  margin: 0;
+  padding: 0;
+  width: 507px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 607px;  /*или див делать с кключенным логином?*/
 }
 
 .navigation-link {
@@ -31,6 +67,13 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+}
+
+.navigation-search {
+  margin: 0;
+  padding: 0;
+  width: 268px;
+  margin-left: auto;
 }
 
 .navigation-user-link {
@@ -66,11 +109,30 @@ body {
   background-repeat: no-repeat;
   background-position: left bottom, left top;
   background-color: #2cedca;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-img {
+  margin: 0 auto;
+  width: 458px;
 }
 
 .advantages {
-  background-color: #FFFFFF; /
+  background-color: #FFFFFF;
   text-align: center;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages-block {
+  margin: 0;
+  padding: 0;
+  width: 458px;
 }
 
 .advantages-title { /*слова на разных строках как*/
@@ -121,6 +183,17 @@ body {
 .services {
   background-color: #FFFFFF;
   text-align: center;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-block {
+  margin: 0;
+  padding: 0;
+  width: 505px;
 }
 
 .services-item-light {
@@ -132,6 +205,13 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
 }
 
 .services-description {
@@ -257,7 +337,6 @@ body {
 .page-footer a {
   color: #000000;
 }
-
 
 .catalog-navigation {
   color: #FFFFFF;
@@ -394,6 +473,7 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   background-color: #82B3D3;
+  text-decoration: none;
 }
 
 .pagination-link-current {
@@ -403,6 +483,5 @@ body {
 
 .pagination-link-hidden {
   color: #000000;
-  text-decoration: none;
   background: none;
 }
