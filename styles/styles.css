@@ -32,6 +32,7 @@ body {
   color: #000000;
   background-color: #F2F2F2;  /*позже - не забывать про тень, контент имеет фиксируемую ширину 1200px и центрируется по странице*/
 }
+
 .main-container {  /*не понимаю, как работает*/
   flex-grow: 1;
 }
@@ -90,21 +91,33 @@ body {
   color: inherit;
   font-weight: 700;
   text-decoration: none;
-  color: inherit;
 }
 
-.navigation-catalog-button {
+.button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #756157;
   color: #FFFFFF;
   text-decoration: none;
+  display: inline-block; /*почитать про свойство*/
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-green {
+  background-color: #7DB54F;
 }
 
 .introduction {
-  background-image: url(../images/decor-background.svg), url(../images/index-background.jpg);
+  background-image: url("../images/decor-background.svg"), url("../images/index-background.jpg");
   background-size: 100% auto, cover; /*cover - фон занимает весь блок, все доступное место*/
   background-repeat: no-repeat;
   background-position: left bottom, left top;
@@ -146,6 +159,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  color: #333333;
 }
 
 .advantages-item {
@@ -166,7 +180,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 
 .reason-title-with-picture {
   color: #FFFFFF;
@@ -254,10 +267,6 @@ body {
 .index-content-button {
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  background-color: #756157;
 }
 
 .subscription {
@@ -298,14 +307,8 @@ body {
 }
 
 .button-subscription {
-  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
-  font-style: normal;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  background: #82B3D3;
   border: none;
 }
 
@@ -326,6 +329,7 @@ body {
 .contacts {
   font-style: normal;
 }
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -370,6 +374,7 @@ body {
 .price-value {
   line-height: 24px;
   color: #000000;
+  text-transform: lowercase;
 }
 
 .control-input {
@@ -378,22 +383,8 @@ body {
   font-weight: 400;
 }
 
-.filter-button {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: inherit;
-}
-
-.active-filter-button {
-  background-color: #82B3D3;
-  color: #FFFFFF;
-}
-
 .transparent-filter-button {
   background: transparent;
-  color: #FFFFFF
 }
 
 .input-price {
@@ -403,7 +394,7 @@ body {
   font-weight: 700;
   font-style: normal;
   color: #000000;
-  background-color: #F2F2F2
+  background-color: #F2F2F2;
   border: none;
 }
 
@@ -412,6 +403,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .catalog-view  {
@@ -430,6 +422,7 @@ body {
 }
 
 .hotel-card-title {
+  font-size: 24;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
@@ -443,28 +436,11 @@ body {
   color: #333333;
 }
 
-.card-detail {
+.card-rating {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
   text-transform: uppercase;
-  background-color: #756157;
-  text-decoration: none;
-  color: #FFFFFF
-}
-
-.favourite-card {  /*почему, если color поставить после размера - не срабатывает*/
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #82B3D3;
-  border: none;
-  color: #FFFFFF
-}
-
-.active-favourite-card {
-  background-color: #7DB54F;
 }
 
 .pagination-link {

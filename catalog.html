@@ -20,12 +20,12 @@
           <a class="navigation-link" href="#">О седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html" arria-current="page">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
         <li class="navigation-user-item">
-          <a class="navigation-user-link" href="catalog.html" arria-current="page">
+          <a class="navigation-user-link" href="catalog.html" aria-current="page">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
@@ -35,8 +35,8 @@
           </a>
           <span class="likes-number">12</span>
         </li>
-        <a class="navigation-catalog-button" href="catalog.html">Хочу сюда</a>
       </ul>
+      <a class="navigation-catalog-button button button-brown" href="catalog.html">Хочу сюда</a>
     </nav>
   </header>
   <main class="main-container main-catalog">
@@ -104,20 +104,16 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, <span>₽</span></legend>
             <p class="price-form-date">
-              <label class="price-value" for="min-price">
-                <span class="visually-hidden">От</span>
-              </label>
+              <label class="price-value" for="min-price">От</label>
               <input class="input-price" type="number" id="min-price" name="min-price" value="0">
             </p>
             <p class="price-form-date">
-              <label class="price-value" for="max-price">
-                <span class="visually-hidden">До</span>
-              </label>
+              <label class="price-value" for="max-price">До</label>
               <input class="input-price" type="number" id="max-price" name="max-price" value="9000">
             </p>
           </fieldset>
-          <button class="filter-button active-filter-button" type="submit">Применить</button>
-          <button class="filter-button transparent-filter-button" type="reset">Сбросить</button>
+          <button class="filter-button button button-blue" type="submit">Применить</button>
+          <button class="filter-button transparent-filter-button button" type="reset">Сбросить</button>
         </form>
       </section>
     </header>
@@ -148,8 +144,8 @@
           </a>
           <p class="card-type">Гостиница</p>
           <p class="card-price">От 4000 ₽</p>
-          <a class="card-detail" href="#">Подробнее</a>
-          <button class="favourite-card">В избранное</button>
+          <a class="card-detail button button-brown" href="#">Подробнее</a>
+          <button type="button" class="favourite-card button button-blue">В избранное</button>
           <p class="stars four-stars">
             <span class="visually-hidden">Отель четыре звезды</span>
           </p>
@@ -164,9 +160,8 @@
           </a>
           <p class="card-type">Гостиница</p>
           <p class="card-price">От 5000 ₽</p>
-          <a class="card-detail" href="#">Подробнее</a>
-          <button class="favourite-card active-favourite-card">В избранное</button> <!--что означает зеленое состояние кнопки - в избраном?-->
-          <p class="stars four-stars">
+          <a class="card-detail button button-brown" href="#">Подробнее</a>
+          <button type="button" class="favourite-card button button-green">В избранное</button>
             <span class="visually-hidden">Отель четыре звезды</span>
           </p>
           <p class="card-rating">Рейтинг: 9,2</p>
@@ -181,8 +176,8 @@
           </a>
           <p class="card-type">Гостиница</p>
           <p class="card-price">От 2500 ₽</p>
-          <a class="card-detail" href="#">Подробнее</a>
-          <button class="favourite-card">В избранное</button>
+          <a class="card-detail button button-brown" href="#">Подробнее</a>
+          <button type="button" class="favourite-card button button-blue">В избранное</button>
           <p class="stars three-stars">
             <span class="visually-hidden">Отель три звезды</span>
           </p>
@@ -198,8 +193,8 @@
           </a>
           <p class="card-type">Гостиница</p>
           <p class="card-price">От 1500 ₽</p>
-          <a class="card-detail" href="#">Подробнее</a>
-          <button class="favourite-card">В избранное</button>
+          <a class="card-detail button button-brown" href="#">Подробнее</a>
+          <button type="button" class="favourite-card button button-blue">В избранное</button>
           <p class="stars two-stars">
             <span class="visually-hidden">Отель две звезды</span>
           </p>
@@ -232,9 +227,9 @@
       <p class="subscription-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в Седоне</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="subscription-email"></label>
+        <label class="visually-hidden" for="subscription-email">Укажите ваш имейл</label>
         <input class="input-email" type="email" id="subscription-email" name="user-email" placeholder="Ваш e-mail">
-        <button class="button-subscription" type="submit">Подписаться</button>
+        <button class="button-subscription button button-blue" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
@@ -261,8 +256,8 @@
         </li>
       </ul>
     </section>
+    <h2 class="visually-hidden">Контактный телефон</h2>
     <address class="contacts">
-      <h2 class="visually-hidden">Контактный телефон</h2>
       <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
     </address>
     <a class="developer-logo" href="https://htmlacademy.ru/">
