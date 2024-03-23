@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Ульяна Войтенко](https://up.htmlacademy.ru/htmlcss/39/user/2355945).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Сайт: [Мой проект Sedona](https://ulyanavoytenko.github.io/2355945-sedona-39/)
 
 ---
 
